@@ -1,0 +1,146 @@
+body{
+	background: #999;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	min-width: 320px
+}
+#Profile-linkTwitter{
+	background: #00DBFF;
+}
+#Profile-linkFace{
+	background: #3b5998; 
+}
+#Profile-linkGit{
+	background: #9ACD32;
+}
+	/*utilidades*/
+.U-title{
+	border-bottom: 1px dashed #00CCFF; 
+	color: #00CCFF;
+	font-weight: normal;
+	font-size: 1.5em;
+	padding-bottom: 0.5em;
+	margin: 0;
+	text-align: center;
+}	
+	/*navegacion*/
+.Menu{
+	background: #1E1E1E;
+	border-bottom: 0.3em solid #555;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+.Menu-item{
+	display: inline-block;
+	height: 2.75em;
+}
+.Menu-link{
+	color: #00DBFF;
+	margin-right: 1.5em;
+	text-decoration: none;
+	line-height: 2.75em
+}
+	/*cabecera*/
+.Header{
+	background-image: url("../img/header.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border-bottom: 0.3em solid #555;
+	padding: 1.5em;
+	margin-top: 5.05em;
+	text-align: center;
+}
+.Header-img{
+	border: 5px solid #999;
+	border-radius: 50%;
+	/*si la imagen es cuadrada no hay nececidad*/
+	height: 12.5em;
+	width: 12.5em;
+	/*height ni el width  */
+}
+.Header-link{
+	color: white;
+	font-weight: 2.2em;
+	font-weight: bold;
+	text-decoration: none;
+}
+.Header-name{
+	color: white;
+	font-weight: 300;
+	font-size: 1.5em;
+	margin: 0;
+}
+	/*perfil*/
+.Profile{
+	margin-bottom: 0.5em;
+	text-align: center;
+}
+.Profile-description{
+	margin: 1em 0.5em 2em 0;
+}
+.Profile-link{
+	/*background: orange;*/
+	border-radius: 1em;
+	color: white;
+	padding: 0.5em 1em;
+	margin-right: .5em;
+	text-decoration: none;
+}
+.Work{
+	margin-top: 2em;
+	text-align: center;
+}
+.Work-container{
+	display: inline-block;
+	margin: 0;
+}
+.Work-conteinerImg{
+	margin: 1.5em; 
+}
+.Work-img{
+	border-radius: .5em;
+	margin:0;
+	height: 8em;
+}
+.Work-description{
+	color: #515151;
+	font-style: italic;
+	font-size: 1.1em;
+}
+	/*Footer*/
+.Footer{
+	background-image: url("../img/Footer.jpg");
+	text-align: center;
+}
+.Footer-description{
+	max-width: 400px;
+}
+.Footer-content,
+.Footer-form{
+	display: inline-block;
+	vertical-align: top;
+	padding: 1em;
+}
+.Footer-title{
+	color: white;
+}
+.Footer-formImput,
+.Footer-formTextarea{
+	background: white;
+	border: none;
+	border-radius: 0.3em;
+	margin: 0 auto 1em;
+	padding: 0.3em;
+	display: block;
+}
+.Footer-formButton{
+	background: orange;
+	color: white;
+	border: none;
+	border-radius: 1em;
+	padding: 0.5em;
+}
