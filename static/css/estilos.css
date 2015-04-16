@@ -61,6 +61,7 @@ body{
 	height: 12.5em;
 	width: 12.5em;
 	/*height ni el width  */
+	box-shadow: 0 0 39px 10px #222;
 }
 .Header-link{
 	color: white;
@@ -90,6 +91,10 @@ body{
 	margin-right: .5em;
 	text-decoration: none;
 }
+.Profile-link:hover{
+	box-shadow: 0 0 1em #555;
+	padding: 0.6em 1.5em;
+}
 .Work{
 	margin-top: 2em;
 	text-align: center;
@@ -103,8 +108,12 @@ body{
 }
 .Work-img{
 	border-radius: .5em;
+	box-shadow: 0 0 2em #555;
 	margin:0;
 	height: 8em;
+}
+.Work-img:hover{
+	box-shadow: 0 0 2em gold;
 }
 .Work-description{
 	color: #515151;
@@ -143,4 +152,7 @@ body{
 	border: none;
 	border-radius: 1em;
 	padding: 0.5em;
+}
+.Footer-formButton:hover{
+	box-shadow: 0 0 1em gold;
 }
