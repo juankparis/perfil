@@ -1,5 +1,6 @@
 @import "nib"
 @import "normalize.styl"
+@import "fonts.styl"
 @import "silder.styl"
 
 /*documento css hecho con tec. suit (orientado a objetos en css)*/
@@ -23,9 +24,11 @@ body
     color #00CCFF
     font-size 1.5em
     font-weight normal
-    margin 0
+    margin 0.5em 0 0 0
     padding-bottom 0.5em
     text-align center
+    &:before
+        color #555
 
 /*menu*/
 
@@ -149,7 +152,10 @@ body
       vertical-align top
     &-title
         color white
-
+        &:before
+            font-size 1.5em
+            text-shadow 1px 1px 8px rgba(0, 0, 0, .75)
+            
     &-formImput,
     &-formTextarea
         background white
@@ -160,10 +166,13 @@ body
         padding 0.3em
     &-formButton
         background orange
-        border-radius 1em
+        border-radius 0.5em
         border none
         color white
         padding 0.5em
+        font-style italic
+        text-shadow 1px 1px 5px rgba(0, 0, 0, .75)
+        box-shadow 1px 1px 8px rgba(0, 0, 0, .75)
         &:hover
             box-shadow 0 0 1em gold
 
