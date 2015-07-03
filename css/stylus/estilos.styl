@@ -1,176 +1,184 @@
+/*@import "nib"*/
 @import "normalize.styl"
 @import "silder.styl"
 
 /*documento css hecho con tec. suit (orientado a objetos en css)*/
-body{
-  background: #999;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  min-width: 320px;
-}
-#Profile-linkTwitter{
-  background: #00DBFF;
-}
-#Profile-linkFace{
-  background: #3b5998;
-}
-#Profile-linkGit{
-  background: #9ACD32;
-}
-  /*utilidades*/
-.U-title{
-  border-bottom: 1px dashed #00CCFF;
-  color: #00CCFF;
-  font-size: 1.5em;
-  font-weight: normal;
-  margin: 0;
-  padding-bottom: 0.5em;
-  text-align: center;
-} 
-  /*navegacion*/
-.Menu{
-  background: #1E1E1E;
-  border-bottom: 0.3em solid #555;
-  left: 0;
-  position: fixed;
-  right: 0;
-  text-align: center;
-  top: 0;
-  z-index: 2;
-}
-.Menu-item{
-  display: inline-block;
-  height: 2.75em;
-}
-.Menu-link{
-  color: #00DBFF;
-  line-height: 2.75em;
-  margin-right: 1.5em;
-  text-decoration: none;
-}
-  /*cabecera*/
-.Header{
-  background-image: url("../img/header.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-bottom: 0.3em solid #555;
-  margin-top: 5.05em;
-  padding: 1.5em;
-  text-align: center;
-}
-.Header-img{
-  border-radius: 50%;
-  border: 5px solid #999;
-  box-shadow: 0 0 39px 10px #222;
-  /*si la imagen es cuadrada no hay nececidad*/
-  height: 12.5em;
-  width: 12.5em;
-  /*height ni el width  */
-}
-.Header-link{
-  color: white;
-  font-weight: 2.2em;
-  font-weight: bold;
-  text-decoration: none;
-}
-.Header-name{
-  color: white;
-  font-size: 1.5em;
-  font-weight: 300;
-  margin: 0;
-}
-  /*perfil*/
-.Profile{
-  margin-bottom: 0.5em;
-  text-align: center;
-}
-.Profile-description{
-  margin: 1em 0.5em 2em 0;
-}
-.Profile-link{
-  /*background: orange;*/
-  border-radius: 1em;
-  color: white;
-  margin-right: .5em;
-  padding: 0.5em 1em;
-  text-decoration: none;
-}
-.Profile-link:hover{
-  box-shadow: 0 0 1em #555;
-  padding: 0.6em 1.5em;
-}
-.Work{
-  margin-top: 2em;
-  text-align: center;
-}
-.Work-container{
-  display: inline-block;
-  margin: 0;
-}
-.Work-conteinerImg{
-  margin: 1.5em; 
-}
-.Work-img{
-  border-radius: .5em;
-  box-shadow: 0 0 2em #555;
-  height: 8em;
-  margin:0;
-}
-.Work-img:hover{
-  box-shadow: 0 0 2em gold;
-}
-.Work-description{
-  color: #515151;
-  font-size: 1.1em;
-  font-style: italic;
-}
-  /*Footer*/
-.Footer{
-  background-image: url("../img/rainbow.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-top: 0.3em solid #555; 
-  text-align: center;
-}
-.Footer-description{
-  max-width: 400px;
-}
-.Footer-content,
-.Footer-form{
-  display: inline-block;
-  padding: 1em;
-  vertical-align: top;
-}
-.Footer-title{
-  color: white;
-}
-.Footer-formImput,
-.Footer-formTextarea{
-  background: white;
-  border-radius: 0.3em;
-  border: none;
-  display: block;
-  margin: 0 auto 1em;
-  padding: 0.3em;
-}
-.Footer-formButton{
-  background: orange;
-  border-radius: 1em;
-  border: none;
-  color: white;
-  padding: 0.5em;
-}
-.Footer-formButton:hover{
-  box-shadow: 0 0 1em gold;
-}
+body
+    background #999
+    font-family 'Open Sans', sans-serif
+    font-size 16px
+    min-width 320px
+
+#Profile-linkTwitter
+    background #00DBFF
+
+#Profile-linkFace
+    background #3b5998
+
+#Profile-linkGit
+    background #9ACD32
+
+.U-title
+    border-bottom 1px dashed #00CCFF
+    color #00CCFF
+    font-size 1.5em
+    font-weight normal
+    margin 0
+    padding-bottom 0.5em
+    text-align center
+
+/*menu*/
+
+.Menu
+    background #1E1E1E
+    border-bottom 0.3em solid #555
+    left 0
+    position fixed
+    right 0
+    text-align center
+    top 0
+    z-index 2
+    &-item
+        display inline-block
+        height 2.75em
+    &-link
+        color #00DBFF
+        line-height 2.75em
+        margin-right 1.5em
+        text-decoration none
+        
+/*cabecera*/
+
+.Header
+    background-image url("../img/header.jpg")
+    background-position center
+    background-repeat no-repeat
+    background-size cover
+    border-bottom 0.3em solid #555
+    margin-top 5.05em
+    overflow: hidden
+    padding 1.5em
+    text-align center
+    &-boton
+        border-radius 50%
+        position absolute
+        right 0.5em
+        top 0.5em
+    &-img
+        border-radius 50%
+        border 5px solid #999
+        box-shadow 0 0 39px 10px #222
+        /*si la imagen es cuadrada no hay nececidad*/
+        height 12.5em
+        width 12.5em
+        /*height ni el width  */
+    &-link
+        color white
+        font-weight 2.2em
+        font-weight bold
+        text-decoration none
+    &-name
+        color white
+        font-size 1.5em
+        font-weight 300
+        margin 0
+
+/*perfil*/
+
+.Profile
+    margin-bottom 0.5em
+    text-align center
+    &-description
+        margin 1em 0.5em 2em 0
+    &-link
+        border-radius 1em
+        color white
+        margin-right .5em
+        padding 0.5em 1em
+        text-decoration none
+        &:hover
+            box-shadow 0 0 1em #555
+            padding 0.6em 1.5em
+
+/*works*/
+
+.Work
+    margin-top 2em
+    text-align center
+    &-container
+        display inline-block
+        margin 0
+    &-conteinerImg
+        margin 1.5em
+    &-img
+        border-radius .5em
+        box-shadow 0 0 2em #555
+        height 8em
+        margin 0
+    &:hover
+        box-shadow 0 0 2em gold
+    &-description
+        color #515151
+        font-size 1.1em
+        font-style italic
+
+/*footer*/
+
+.Footer
+    background-image url("../img/rainbow.jpg")
+    background-position center
+    background-repeat no-repeat
+    background-size cover
+    border-top: 0.3em solid #555; 
+    text-align center
+    text-align: center;
+    &-description
+        max-width 400px
+    &-content,
+    &-form
+      display inline-block
+      padding 1em
+      vertical-align top
+    &-title
+        color white
+
+    &-formImput,
+    &-formTextarea
+        background white
+        border-radius 0.3em
+        border none
+        display block
+        margin 0 auto 1em
+        padding 0.3em
+    &-formButton
+        background orange
+        border-radius 1em
+        border none
+        color white
+        padding 0.5em
+        &:hover
+            box-shadow 0 0 1em gold
 
 @media screen and (max-width:768px)
-  .rslides
-    max-width 75%
+    .Header
+        margin-top 0
 
+    .Menu
+        background rgba(51,51,51, 1)
+        border-right 0.3em solid rgba(153,153,153, .8)
+        height 100%
+        left -204px
+        transition 0.3s
+        width 200px
+        &.is-active
+            left 0
+        &-item
+            display block
+
+    .rslides
+        max-width 75%
+    
 @media screen and (max-width: 480px)
-  .rslides
-    max-width 95%
+    .rslides
+        max-width 95
     
