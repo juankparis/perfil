@@ -183,14 +183,26 @@ body
     .Menu
         background rgba(51,51,51, 1)
         border-right 0.3em solid rgba(153,153,153, .8)
+        font-size larger
         height 100%
         left -204px
+        text-align left
         transition 0.3s
         width 200px
         &.is-active
             left 0
+        &-list
+            padding-left 0
         &-item
             display block
+            width 100%
+        &-link
+            display block
+            margin-right 0
+            padding-left 1em
+            transition 0.3s
+            &:hover
+                background rgba(153, 153, 153, .75)
 
     .rslides
         max-width 75%
@@ -198,4 +210,12 @@ body
 @media screen and (max-width: 480px)
     .rslides
         max-width 95
+        
+@media screen and (max-width: 400px)
     
+    #Profile-linkTwitter 
+    #Profile-linkFace
+    #Profile-linkGit
+        display block
+        margin 0.7em 3em
+        border-radius: 0.8em    
